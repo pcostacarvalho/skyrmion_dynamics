@@ -1,0 +1,56 @@
+rm -f jij.imp.* jij.all* dij.all* *.rot *.correct
+
+#cp ../jds/dijso.out dij.imp
+#cp ../jds/jijso.out jij.imp
+
+awk -v s=28 '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1-s, $2-s, $3, $4, $5, $6, $7}' jij.imp > jij.imp.numbered
+awk -v s=28 '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1-s, $2-s, $3, $4, $5, $6, $7, $8, $9}' dij.imp > dij.imp.numbered
+
+./commands-jfile
+./commands-dm
+
+#rotate jij and dij files; correct them for UppASD
+
+#pristine surface
+NAME='sup'
+gsed "s/#NAME/${NAME}/g" rotate_clust.py > rotate_temp.py
+python3 rotate_temp.py
+
+gsed "s/#NAME/${NAME}.rot/g" fix_jfile.sh > fix_jfile_temp.sh
+chmod +x fix_jfile_temp.sh
+./fix_jfile_temp.sh
+
+gsed "s/#NAME/${NAME}.rot/g" fix_dm.sh > fix_dm_temp.sh  
+chmod +x fix_dm_temp.sh
+./fix_dm_temp.sh
+
+rm rotate_temp.py fix_jfile_temp.sh fix_dm_temp.sh
+
+#impurity (all interactions)
+NAME='all.numbered'
+gsed "s/#NAME/${NAME}/g" rotate_clust.py > rotate_temp.py
+python3 rotate_temp.py
+
+gsed "s/#NAME/${NAME}.rot/g" fix_jfile.sh > fix_jfile_temp.sh
+chmod +x fix_jfile_temp.sh
+./fix_jfile_temp.sh
+awk '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1, $2, $3, $4, $5, $6, $7}' jij.all.numbered.rot.correct > temp_file
+mv temp_file jij.all.numbered.rot.correct 
+
+gsed "s/#NAME/${NAME}.rot/g" fix_dm.sh > fix_dm_temp.sh
+chmod +x fix_dm_temp.sh
+./fix_dm_temp.sh
+awk '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1, $2, $3, $4, $5, $6, $7, $8, $9}' dij.all.numbered.rot.correct > temp_file
+mv temp_file dij.all.numbered.rot.correct
+
+rm rotate_temp.py fix_jfile_temp.sh fix_dm_temp.sh
+
+#get only interactions in the Fe layer
+awk '$1 > 19 && $1 < 39' jij.all.numbered.rot.correct | awk '$2 > 19 && $2 < 39' | awk -v s=19 '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1-s, $2-s, $3, $4, $5, $6, $7}' > jij.fe.layer.rot
+awk '$1 > 19 && $1 < 39' dij.all.numbered.rot.correct | awk '$2 > 19 && $2 < 39' | awk -v s=19 '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1-s, $2-s, $3, $4, $5, $6, $7, $8, $9}' > dij.fe.layer.rot
+
+#get only interactions in the 3 layers
+awk '$1 < 58' jij.all.numbered.rot.correct | awk '$2 < 58' | awk '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1, $2, $3, $4, $5, $6, $7}' > jij.3layers.rot
+awk '$1 < 58' dij.all.numbered.rot.correct | awk '$2 < 58' | awk '{printf "%3s%3s%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f%12.6f\n", $1, $2, $3, $4, $5, $6, $7, $8, $9}' > dij.3layers.rot
+
+
