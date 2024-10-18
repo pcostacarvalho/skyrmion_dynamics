@@ -6,7 +6,7 @@
 
 #adapted from write-inputs-cluster (Ivan)
 import numpy as np
-
+import sys
 
 ### Read j data ###
 dataj_imp = np.loadtxt('jij.fe.layer.rot')
@@ -14,8 +14,8 @@ dataj_imp = np.loadtxt('jij.fe.layer.rot')
 dataj_imp_vec = dataj_imp[:,2:5]
 
 ### Definitions ####
-size_x = 80 # size of the spin lattice
-size_y = 40
+size_x = int(sys.argv[1])  # size of the spin lattice
+size_y = int(sys.argv[2])
 va = [0.707000,0.000000,0] ## primitive vector 1 of the lattice
 vb = [0.353500,0.612300,0] ## primitive vector 2 of the lattice
 pos_imp = 1 # position (site number) of the impurity on jfile.imp
@@ -40,8 +40,8 @@ atom = 0 ; positions = [] ; center = 0
 
 
 #value between 0 and 1 to specify the position of the cluster inside the lattice
-fx = 1/2  
-fy = 1/2 
+fx = float(sys.argv[3])
+fy = float(sys.argv[4])
 
 mean_x = round(size_x*fx)
 mean_y = round(size_y*fy)
