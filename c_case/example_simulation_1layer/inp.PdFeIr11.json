@@ -1,0 +1,19 @@
+{
+             "simid"  :             "PdFeIr11",
+             "ncell"  :             [       80 ,       40 ,        1 ], 
+                "bc"  :             [ "P" , "P" , "0" ], 
+              "cell"  :  [
+           [   0.707000     ,    0.00000     ,    0.00000     ]  
+           [   0.353500     ,   0.612300     ,    0.00000     ]  
+           [    0.00000     ,    0.00000     ,    1.00000     ]  
+                         ],
+                "na"  :         1,
+                "nt"  :         1,
+               "sym"  :         0,
+               "llg"  :         1,
+           "sdealgh"  :         1,
+         "mensemble"  :         1,
+           "initmag"  :         4,
+       "restartfile"  :             "./restart.PdFeIr11.sk              ",
+           "comment"  :  "Input data from UppASD simulation"
+  } 
