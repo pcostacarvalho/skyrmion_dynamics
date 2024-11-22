@@ -1,0 +1,19 @@
+
+NL=$(wc -l clust | awk '{print $1}')  
+
+head -n	1 clust	> surf.jmol
+echo "" >> surf.jmol
+
+for i in $(seq 2 $NL)
+do  
+        sed -n ${i}p clust |awk '{printf "%4s%18.10f%18.10f%18.10f\n", $4, $1, $2, $3}' >> surf.jmol
+        sed -n ${i}p clust |awk '{printf "%4s%18.10f%18.10f%18.10f\n", $9, $6, $7, $8}' >> surf.jmol
+done
+
+sed -i 's/  1  /  Ir  /g' surf.jmol
+sed -i 's/  2  /  Pt  /g' surf.jmol
+sed -i 's/  3  /  Pd  /g' surf.jmol
+sed -i 's/  4  /  Fe  /g' surf.jmol
+for i in $(seq 4 9); do sed -i "s/  $i  /  Ir  /g" surf.jmol; done
+
+

@@ -1,0 +1,223 @@
+mpprun info: Starting impi run on 1 node ( 8 rank X 4 th ) for job ID 23387817
+ -------------------------------------------------------- 
+  ___  ___     _    __  __ _____ ___       _   ___   _    
+ | _ \/ __|___| |  |  \/  |_   _/ _ \ ___ /_\ / __| /_\   
+ |   /\__ \___| |__| |\/| | | || (_) |___/ _ \\__ \/ _ \  
+ |_|_\|___/   |____|_|  |_| |_| \___/   /_/ \_\___/_/ \_\ 
+ -------------------------------------------------------- 
+ Git version: 02f0
+ Execution Date: 12/12/2022  Execution Time: 15:28:09:551
+ -------------------------------------------------------- 
+   Using MPI with   8 processors.
+ Parallellization over atoms.
+ Average no. of atoms per processor: 11.88
+ Maximum no. of atoms per processor: 12
+ Load efficiency= 99%
+ --------------------------------------------------------
+     Using OpenMP with  4  threads out of  4 possible.
+                     Impurity mode
+          Fully relativistic collinear calculation
+ --------------------------------------------------------
+ Linear mixing
+ --------------------------------------------------------
+     1 ATOM TAKEN AS STARTING POINT  0
+    25 ATOM TAKEN AS STARTING POINT  2
+    13 ATOM TAKEN AS STARTING POINT  1
+    37 ATOM TAKEN AS STARTING POINT  3
+    49 ATOM TAKEN AS STARTING POINT  4
+    73 ATOM TAKEN AS STARTING POINT  6
+    85 ATOM TAKEN AS STARTING POINT  7
+    61 ATOM TAKEN AS STARTING POINT  5
+     2 ATOM TAKEN AS STARTING POINT  0
+    14 ATOM TAKEN AS STARTING POINT  1
+    26 ATOM TAKEN AS STARTING POINT  2
+    38 ATOM TAKEN AS STARTING POINT  3
+    74 ATOM TAKEN AS STARTING POINT  6
+    50 ATOM TAKEN AS STARTING POINT  4
+    86 ATOM TAKEN AS STARTING POINT  7
+    62 ATOM TAKEN AS STARTING POINT  5
+     3 ATOM TAKEN AS STARTING POINT  0
+    15 ATOM TAKEN AS STARTING POINT  1
+    27 ATOM TAKEN AS STARTING POINT  2
+    39 ATOM TAKEN AS STARTING POINT  3
+    75 ATOM TAKEN AS STARTING POINT  6
+    51 ATOM TAKEN AS STARTING POINT  4
+    63 ATOM TAKEN AS STARTING POINT  5
+    87 ATOM TAKEN AS STARTING POINT  7
+     4 ATOM TAKEN AS STARTING POINT  0
+    16 ATOM TAKEN AS STARTING POINT  1
+    28 ATOM TAKEN AS STARTING POINT  2
+    76 ATOM TAKEN AS STARTING POINT  6
+    52 ATOM TAKEN AS STARTING POINT  4
+    40 ATOM TAKEN AS STARTING POINT  3
+    64 ATOM TAKEN AS STARTING POINT  5
+    88 ATOM TAKEN AS STARTING POINT  7
+     5 ATOM TAKEN AS STARTING POINT  0
+    17 ATOM TAKEN AS STARTING POINT  1
+    29 ATOM TAKEN AS STARTING POINT  2
+    53 ATOM TAKEN AS STARTING POINT  4
+    77 ATOM TAKEN AS STARTING POINT  6
+    41 ATOM TAKEN AS STARTING POINT  3
+    65 ATOM TAKEN AS STARTING POINT  5
+    89 ATOM TAKEN AS STARTING POINT  7
+     6 ATOM TAKEN AS STARTING POINT  0
+    18 ATOM TAKEN AS STARTING POINT  1
+    30 ATOM TAKEN AS STARTING POINT  2
+    54 ATOM TAKEN AS STARTING POINT  4
+    78 ATOM TAKEN AS STARTING POINT  6
+    42 ATOM TAKEN AS STARTING POINT  3
+    66 ATOM TAKEN AS STARTING POINT  5
+    90 ATOM TAKEN AS STARTING POINT  7
+     7 ATOM TAKEN AS STARTING POINT  0
+    19 ATOM TAKEN AS STARTING POINT  1
+    31 ATOM TAKEN AS STARTING POINT  2
+    55 ATOM TAKEN AS STARTING POINT  4
+    79 ATOM TAKEN AS STARTING POINT  6
+    43 ATOM TAKEN AS STARTING POINT  3
+    67 ATOM TAKEN AS STARTING POINT  5
+    91 ATOM TAKEN AS STARTING POINT  7
+    20 ATOM TAKEN AS STARTING POINT  1
+     8 ATOM TAKEN AS STARTING POINT  0
+    32 ATOM TAKEN AS STARTING POINT  2
+    56 ATOM TAKEN AS STARTING POINT  4
+    80 ATOM TAKEN AS STARTING POINT  6
+    44 ATOM TAKEN AS STARTING POINT  3
+    68 ATOM TAKEN AS STARTING POINT  5
+    92 ATOM TAKEN AS STARTING POINT  7
+     9 ATOM TAKEN AS STARTING POINT  0
+    21 ATOM TAKEN AS STARTING POINT  1
+    33 ATOM TAKEN AS STARTING POINT  2
+    57 ATOM TAKEN AS STARTING POINT  4
+    81 ATOM TAKEN AS STARTING POINT  6
+    45 ATOM TAKEN AS STARTING POINT  3
+    69 ATOM TAKEN AS STARTING POINT  5
+    93 ATOM TAKEN AS STARTING POINT  7
+    10 ATOM TAKEN AS STARTING POINT  0
+    22 ATOM TAKEN AS STARTING POINT  1
+    34 ATOM TAKEN AS STARTING POINT  2
+    58 ATOM TAKEN AS STARTING POINT  4
+    82 ATOM TAKEN AS STARTING POINT  6
+    46 ATOM TAKEN AS STARTING POINT  3
+    70 ATOM TAKEN AS STARTING POINT  5
+    94 ATOM TAKEN AS STARTING POINT  7
+    11 ATOM TAKEN AS STARTING POINT  0
+    23 ATOM TAKEN AS STARTING POINT  1
+    35 ATOM TAKEN AS STARTING POINT  2
+    59 ATOM TAKEN AS STARTING POINT  4
+    83 ATOM TAKEN AS STARTING POINT  6
+    47 ATOM TAKEN AS STARTING POINT  3
+    71 ATOM TAKEN AS STARTING POINT  5
+    95 ATOM TAKEN AS STARTING POINT  7
+    12 ATOM TAKEN AS STARTING POINT  0
+    24 ATOM TAKEN AS STARTING POINT  1
+    36 ATOM TAKEN AS STARTING POINT  2
+    60 ATOM TAKEN AS STARTING POINT  4
+    48 ATOM TAKEN AS STARTING POINT  3
+    84 ATOM TAKEN AS STARTING POINT  6
+    72 ATOM TAKEN AS STARTING POINT  5
+ --------------------------------------------------------
+ --- Calculating Green functions from Haydock recursion ---
+          Fermi level:   0.02533
+    Energy resolution:   0.00069
+             Total band energy : -160.816676
+   Total corrected band energy : -143.492772
+      Total number of electrons:  684.051446    0.025325 2212.000000    0.024636
+   Atom:  85  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  86  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  87  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  88  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  89  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  90  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  91  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  92  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  93  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  94  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  95  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:   1  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   2  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   3  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   4  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   5  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   6  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   7  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   8  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:   9  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  10  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  11  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  12  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  37  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  38  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  39  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  40  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  41  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  42  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  43  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  44  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  45  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  46  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  47  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  48  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  73  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  74  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  75  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  76  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  77  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  78  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  79  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  80  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  81  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  82  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  83  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  84  Spin moment: -0.049629 Orbital moment  0.000225
+   Atom:  61  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  62  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  63  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  64  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  65  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  66  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  67  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  68  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  69  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  25  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  26  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  27  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  28  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  29  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  30  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  31  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  32  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  33  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  34  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  35  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  36  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  70  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  71  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  72  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  13  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  14  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  15  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  16  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  17  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  18  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  19  Spin moment:  0.008308 Orbital moment -0.000013
+   Atom:  20  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  21  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  22  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  23  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  24  Spin moment:  0.338644 Orbital moment  0.020818
+   Atom:  49  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  50  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  51  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  52  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  53  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  54  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  55  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  56  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  57  Spin moment:  2.787733 Orbital moment  0.093062
+   Atom:  58  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  59  Spin moment: -0.033258 Orbital moment -0.016244
+   Atom:  60  Spin moment: -0.033258 Orbital moment -0.016244
+ --------------------------------------------------------
+  MIXPQ: norm=        0.203498E-05
+  MIXPZ: norm=        0.203498E-05
+mpprun info:   Job terminated with error

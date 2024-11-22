@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# mostra a convergencia da superficie
+
+if [ ! -f "job.out" ] ; then
+echo "Nao tem o arquivo job.out. Saindo..."
+exit 1 ;
+fi
+
+grep 'RMS difference in moments:' job.out
+
+num=$(grep 'RMS difference in moments:' job.out | wc -l)
+
+echo ""
+echo "Foram realizadas ${num} iteracoes."
+echo ""
+
