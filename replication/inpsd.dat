@@ -1,0 +1,63 @@
+simid PdFeIr11
+ncell    80       40         1                 System size
+BC       P       P         0                 Boundary conditions (0=vacuum,P=periodic)
+
+cell    0.707000     0.000000     0.000000
+        0.353500     0.612300     0.000000
+        0.000000     0.000000     1.000000
+
+Sym       0                                     Symmetry of lattice (0 for no, 1 for cubic, 2 for 2d cubic, 3 for hexagonal)
+
+ncell_clus   2       1         1 
+
+cell_clus   28.280000     0.000000     0.000000
+            14.140000    24.492000     0.000000
+             0.000000     0.000000     1.000000
+
+maptype 1
+Mensemble 1
+do_prnstruct 2
+do_cluster Y
+
+posfile  ./posfile_host
+posfile_clus ./posfile_clus
+exchange ./jfile_host
+exchange_clus ./jfile_clus 
+momfile  ./momfile_host
+momfile_clus ./momfile_clus
+dm ./dm_host
+dm_clus ./dm_clus
+anisotropy ./kfile_host
+anisotropy_clus ./kfile_clus
+
+Initmag   3                                     (1=random, 2=cone, 3=spec., 4=file)
+restartfile ./restart.PdFeIr11.sk
+
+
+mode      N                                     S=SD, M=MC           
+Temp      1e-6         K                     Measurement phase parameters
+damping   0.05                               Damping parameter
+nstep   250000                                 Number of time-steps
+timestep  1.000e-15        s                    The time step-size for the SDE-solver
+hfield 0.0 0.0 3.0
+
+do_proj_avrg Y
+
+plotenergy   1
+do_cumu Y
+cumu_step 50
+cumu_buff 10
+do_avrg Y
+do_tottraj Y                                    Measure moments
+tottraj_step       100
+tottraj_buff       10                           time step, buffer size
+avrg_step 100
+avrg_buff 10
+skyno T
+alat 3.84e-10
+
+do_skyno_cmass Y
+stt A
+jvec  0.10000000 0.0000000000 0.0000000000
+adibeta 0.05
+
